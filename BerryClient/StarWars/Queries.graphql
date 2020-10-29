@@ -1,0 +1,10 @@
+query getFoo ($id: ID) {
+    person(id: $id) {
+        name
+        filmConnection {
+            films {
+                title
+            }
+        }
+    }
+}
