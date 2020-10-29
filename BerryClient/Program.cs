@@ -13,7 +13,7 @@ namespace BerryClient
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddHttpClient(
                 "StarWarsClient",
-                c => c.BaseAddress = new Uri("http://localhost:53964"));
+                c => c.BaseAddress = new Uri("exampleUrl.com"));
             serviceCollection.AddStarWarsClient();
 
             IServiceProvider services = serviceCollection.BuildServiceProvider();
